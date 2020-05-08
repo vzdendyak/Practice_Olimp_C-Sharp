@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Olimp_C-Sharp", "Practice_Olimp_C-Sharp\Practice_Olimp_C-Sharp.csproj", "{F067C828-6F18-48DF-BEB1-B5D7B6961603}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F067C828-6F18-48DF-BEB1-B5D7B6961603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F067C828-6F18-48DF-BEB1-B5D7B6961603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F067C828-6F18-48DF-BEB1-B5D7B6961603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F067C828-6F18-48DF-BEB1-B5D7B6961603}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {090B7BF7-7581-4318-AC67-B9BFF5F7A43D}
+	EndGlobalSection
+EndGlobal
