@@ -6,4 +6,8 @@
     <RootNamespace>Practice_Olimp_C_Sharp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
+  </ItemGroup>
+
 </Project>

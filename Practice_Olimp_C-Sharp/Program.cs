@@ -7,8 +7,8 @@ namespace Practice_Olimp_C_Sharp
     {
         private static void Main(string[] args)
         {
-            DuplicatesTask.OnMain();
-
+            //DuplicatesTask.OnMain();
+            CryptMethods.psevdo_Main();
             Console.WriteLine();
         }
 
