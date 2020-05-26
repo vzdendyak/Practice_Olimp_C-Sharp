@@ -9,7 +9,8 @@ namespace Practice_Olimp_C_Sharp
         {
             //DuplicatesTask.OnMain();
             //CryptMethods.psevdo_Main();
-            Single_number.on_Main();
+            //Single_number.on_Main();
+            ArraysIntersection.on_Main();
             Console.WriteLine();
         }
 
