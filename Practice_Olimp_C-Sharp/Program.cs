@@ -11,7 +11,8 @@ namespace Practice_Olimp_C_Sharp
             //CryptMethods.psevdo_Main();
             //Single_number.on_Main();
             //ArraysIntersection.on_Main();
-            MoveZeroes.on_Main();
+            //MoveZeroes.on_Main();
+            TwoSumTask.on_Main();
             Console.WriteLine();
         }
 
