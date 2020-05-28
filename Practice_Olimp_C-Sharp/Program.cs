@@ -12,7 +12,8 @@ namespace Practice_Olimp_C_Sharp
             //Single_number.on_Main();
             //ArraysIntersection.on_Main();
             //MoveZeroes.on_Main();
-            TwoSumTask.on_Main();
+            //TwoSumTask.on_Main();
+            SudokuValidationTask.onMain();
             Console.WriteLine();
         }
 
