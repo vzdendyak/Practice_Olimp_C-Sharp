@@ -13,7 +13,10 @@ namespace Practice_Olimp_C_Sharp
             //ArraysIntersection.on_Main();
             //MoveZeroes.on_Main();
             //TwoSumTask.on_Main();
-            SudokuValidationTask.onMain();
+            //SudokuValidationTask.onMain();
+            //RotateMatrix.OnMain();
+            PlusOne.onMain();
+
             Console.WriteLine();
         }
 
