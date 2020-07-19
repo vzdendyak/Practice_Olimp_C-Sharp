@@ -11,7 +11,9 @@ namespace Chapter_String
             //FirstUniqueCharacter.OnMain();
             // AnagramTask.OnMain();
             //PalindromTask.OnMain();
-            StringToIntegerTask.onMain();
+            //StringToIntegerTask.onMain();
+            // IndeOfTask.OnMain();
+            CommonPrefixTask.OnMain();
         }
     }
 }
