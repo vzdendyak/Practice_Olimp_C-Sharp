@@ -59,17 +59,7 @@ namespace CourseraAlgorithms
             return i;
         }
 
-        public void GetDates()
-        {
-            for (int i = 0; i < logs.Length; i++)
-            {
-                if (!find(logs[i].FirstId, logs[i].SecondId))
-                {
-                    union(logs[i].FirstId, logs[i].SecondId);
-                    count--;
-                }
-            }
-        }
+       
     }
 
     public class Log

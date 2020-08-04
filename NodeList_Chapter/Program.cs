@@ -6,7 +6,8 @@ namespace NodeList_Chapter
     {
         private static void Main(string[] args)
         {
-            DeleteNodeTask.OnMain();
+            //DeleteNodeTask.OnMain();
+            DeleteNodeFromEnd.OnMain();
         }
     }
 }

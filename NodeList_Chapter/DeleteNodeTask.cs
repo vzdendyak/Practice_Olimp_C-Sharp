@@ -8,11 +8,11 @@ namespace NodeList_Chapter
     {
         public static void OnMain()
         {
-            var node1 = new ListNode(1);
-            var node2 = new ListNode(2);
-            var node3 = new ListNode(3);
-            var node4 = new ListNode(4);
-            var node5 = new ListNode(5);
+            var node1 = new ListNode1(4);
+            var node2 = new ListNode1(2);
+            var node3 = new ListNode1(3);
+            var node4 = new ListNode1(4);
+            var node5 = new ListNode1(5);
             node1.next = node2;
             node2.next = node3;
             node3.next = node4;
@@ -20,23 +20,23 @@ namespace NodeList_Chapter
             node5.next = null;
         }
 
-        public static void DeleteNode(ListNode node)
+        public static void DeleteNode(ListNode1 node)
         {
-            if (node.next == null)
+            if (node.next != null)
             {
-                node = null;
-                return;
+                node.val = node.next.val;
+                node.next = node.next.next;
             }
-            node = node.next;
+            node = null;
         }
     }
 
-    public class ListNode
+    public class ListNode1
     {
         public int val;
-        public ListNode next;
+        public ListNode1 next;
 
-        public ListNode(int x)
+        public ListNode1(int x)
         {
             val = x;
         }
