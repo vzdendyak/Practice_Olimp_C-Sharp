@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStudy", "MyStudy\MyStudy.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NodeList_Chapter", "NodeList_Chapter\NodeList_Chapter.csproj", "{882DE53D-40D0-45A6-A33B-07C1E9514E87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseraAlgorithms", "CourseraAlgorithms\CourseraAlgorithms.csproj", "{F5C1FFBE-2CD2-4A11-90F4-5C84978AF972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseraAlgorithms", "CourseraAlgorithms\CourseraAlgorithms.csproj", "{F5C1FFBE-2CD2-4A11-90F4-5C84978AF972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars", "CodeWars\CodeWars.csproj", "{F7296EBC-959E-401B-9F21-874604C6C717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeWars", "CodeWars\CodeWars.csproj", "{F7296EBC-959E-401B-9F21-874604C6C717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOS_University", "AOS_University\AOS_University.csproj", "{B1B71932-715C-4CBB-B40C-ADBF0079DE71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,18 @@ Global
 		{F7296EBC-959E-401B-9F21-874604C6C717}.Release|x64.Build.0 = Release|Any CPU
 		{F7296EBC-959E-401B-9F21-874604C6C717}.Release|x86.ActiveCfg = Release|Any CPU
 		{F7296EBC-959E-401B-9F21-874604C6C717}.Release|x86.Build.0 = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|x64.Build.0 = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Debug|x86.Build.0 = Debug|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|x64.ActiveCfg = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|x64.Build.0 = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|x86.ActiveCfg = Release|Any CPU
+		{B1B71932-715C-4CBB-B40C-ADBF0079DE71}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
