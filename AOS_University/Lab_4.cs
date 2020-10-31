@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Numerics;
+using System.Collections.Generic;
+using System.Text;
 
 namespace AOS_University
 {
-    public class Lab_1
+    public class Lab_4
     {
         public double t_obs = 0.1;
         public double lambda = 100;
         public double n = 12;
-        public double P_n = 0.943;
+        public double P_nobs = 0.943;
         public double P_t = 0.9;
         public double P_lambda = 0.64;
         //public double t_obs = 0.2;
@@ -23,6 +24,7 @@ namespace AOS_University
         {
             int ans = 0;
             ans = calculate(n);
+            Console.ResetColor();
             while (ans != 0)
             {
                 if (ans == 1)
@@ -30,8 +32,11 @@ namespace AOS_University
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("--------------------");
                     Console.ResetColor();
-                    n += 1;
-                    ans = calculate(n);
+                    lambda -= 0.01;
+                    Console.WriteLine("Enter lambda:");
+                    var t = Console.ReadLine();
+                    lambda = Double.Parse(t);
+                    ans = calculate(lambda);
                     continue;
                 }
                 else if (ans == -1)
@@ -39,8 +44,11 @@ namespace AOS_University
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("--------------------");
                     Console.ResetColor();
-                    n -= 1;
-                    ans = calculate(n);
+                    lambda += 0.01;
+                    Console.WriteLine("Enter lambda:");
+                    var t = Console.ReadLine();
+                    lambda = Double.Parse(t);
+                    ans = calculate(lambda);
                     continue;
                 }
             }
@@ -49,8 +57,9 @@ namespace AOS_University
             Console.ResetColor();
         }
 
-        public int calculate(double n)
+        public int calculate(double t)
         {
+            Console.ResetColor();
             double P_0, P_n, P_obs, alfa, sum, N_k, K_zan, N_0, K_prostoiu;
             P_0 = P_n = P_obs = sum = alfa = N_k = K_zan = 0;
             alfa = lambda * t_obs;
@@ -71,7 +80,10 @@ namespace AOS_University
             P_n = Math.Pow(alfa, n) / (FactTree((int)n)) * P_0;
             Console.WriteLine($"P_n = {P_n}");
             P_obs = 1 - P_n;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+
             Console.WriteLine($"P_обслуговування = {P_obs}");
+            Console.ResetColor();
             N_k = alfa * P_obs;
             Console.WriteLine($"N_k = {N_k}");
             K_zan = N_k / n;
@@ -92,12 +104,12 @@ namespace AOS_University
             K_prostoiu = N_0 / n;
             Console.WriteLine($"K_prostoiu = {K_prostoiu}");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"n = {n}");
+            Console.WriteLine($"lambda = {lambda}");
             Console.ResetColor();
 
-            if (K_zan == P_obs)
+            if (Math.Round(P_lambda, 3) == Math.Round(P_obs, 3))
                 return 0;
-            else if (K_zan < P_obs)
+            else if (Math.Round(P_lambda, 3) < Math.Round(P_obs, 3))
                 return -1;
             else
                 return 1;

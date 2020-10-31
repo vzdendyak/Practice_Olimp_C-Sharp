@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Numerics;
+using System.Collections.Generic;
+using System.Text;
 
 namespace AOS_University
 {
-    public class Lab_1
+    public class Lab_2
     {
         public double t_obs = 0.1;
         public double lambda = 100;
-        public double n = 12;
-        public double P_n = 0.943;
+        public double n = 15;
+        public double P_nobs = 0.943;
         public double P_t = 0.9;
         public double P_lambda = 0.64;
         //public double t_obs = 0.2;
@@ -95,9 +96,9 @@ namespace AOS_University
             Console.WriteLine($"n = {n}");
             Console.ResetColor();
 
-            if (K_zan == P_obs)
+            if (Math.Round(P_nobs, 3) == Math.Round(P_obs, 3))
                 return 0;
-            else if (K_zan < P_obs)
+            else if (Math.Round(P_nobs, 3) < Math.Round(P_obs, 3))
                 return -1;
             else
                 return 1;
